@@ -1,0 +1,52 @@
+.countainer {
+    margin: 28px 209px 28px 260px;
+}
+
+.chapters{
+        margin-left: 175px;
+        p{
+            padding: 0;
+            font-size: 24px;
+            color: #fff;
+            background-color: #000;
+            width: 181px;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+        }
+}
+
+.page{
+        padding: 10px 0;
+        width: 620px;
+        height: 106px;
+        border: 4px solid black;
+        li {
+              position: relative;
+            a{
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+        span {
+               float: right;
+               position: absolute;
+               margin-left: 16px;
+               padding: 2px 12px;
+               font-size: 14px;
+               border: 1px solid #50FF44;
+               background: #50FF44;
+               text-align: center;
+               font-weight: bold;
+               color: #000; 
+               bottom: 8px;
+               left: 250px;
+        }
+}

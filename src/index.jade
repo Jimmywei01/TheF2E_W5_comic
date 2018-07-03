@@ -2,29 +2,29 @@ extends _layout.jade
 
 block header
   #header
-    .countainer-h
+    .title
       h1 Comicomic
       
     
 block content 
   #content
     .countainer
-       .row
+       .row.clearfix
          .col-6.img
            img(src="https://hexschool.github.io/THE_F2E_Design/week5-comic%20viewer/assets/comic%20cover.png", alt="none")
          .col-6.hexschool
            h2 MY HEXSCHOOL
            .genres 
-            p Genres
+            p.subtitle Genres
             p Fusce/vehicula/dolor
            .author
-            p Author
+            p.subtitle Author
             p Namae Shiranai
            .status 
-            p Status
+            p.subtitle Status
             p Ongoing
            .rate
-            p Rate
+            p.subtitle Rate
             ul.star
              li <i class="fas fa-star"></i>
              li <i class="fas fa-star"></i>
@@ -32,21 +32,26 @@ block content
              li <i class="fas fa-star"></i>
              li <i class="far fa-star"></i>
            .summary
-            p Summary
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, illum veniam hic earum est officia perferendis repudiandae quam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate ratione obcaecati laborum pariatur quam laudantium esse exercitationem culpa soluta totam cumque, dolorum quia, voluptates, id consequuntur laboriosam!
+             p Summary
+             .info
+               p If your banker breaks, you snap; if your apothecary by mistake sends you poison in your pills, you die. 
+               p Therefore, I say, I saw that this situation of mine was the precise situation of every mortal that has this Siamese connexion with a plurality of other mortals. 
 
 
-block footer
+
+  block footer
+
   #footer
-    .countainer-f
-     .chapters
-       p All Chapters
-       ul.page
-        li Chapter 1: The F2E Challenge Start!
-        li Chapter 2: Todo List Going Crazy!
-       .mark NEW
-        
+    .countainer
+      .chapters
+        p All Chapters
+        ul.page
+          li
+            a(href="#") Chapter 1: The F2E Challenge Start!
+          li
+            a(href="#") Chapter 2: Todo List Going Crazy!
+            span NEW
+      
     
 
 
