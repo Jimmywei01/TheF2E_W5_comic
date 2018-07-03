@@ -1,0 +1,155 @@
+extends _layout.jade
+
+block header
+  #header
+    .countainer-h
+      .logo 
+        a(href="#")
+          img(src="https://github.com/Jimmywei01/TheF2E_W2_filter/blob/master/src/images/logo.png?raw=true", alt="none")
+       
+  #header2
+    .countainer-h2
+      .searchBar
+         label(for="submit")<i class="fa fa-search "></i>
+           button(type="submit" id="submit")
+         label(for="search").search
+           input(type="text" placeholder="Explore your own activities" id ="search" name="search")
+        
+    
+
+
+block sidebar
+  #sidebar
+    .countainer-s
+     .location
+        ul
+          li
+            h2 Location<i class="fas fa-minus"></i>
+          li
+            select(name="location")
+              option(value="taiwan" selected="selected") Taiwan
+              option(value="japan") Japan
+              option(value="china") China
+  #sidebar2 
+    .countainer-s  
+     .date
+       ul
+         li
+           h2 Date<i class="fas fa-plus"></i>
+         li.from
+           p from
+           input(type="date", name="none")
+         li.to
+           p to
+           input(type="date", name="none")
+  #sidebar3
+    .countainer-s
+     .categories
+        h2 Categories<i class="fas fa-plus"></i>
+        ul
+          li          
+            input(type="checkbox", id="all" )
+            label(for="all") All
+          li          
+            input(type="checkbox", id="Entertainmint")
+            label(for="Entertainmint") Entertainmint
+          li          
+            input(type="checkbox", id="food")
+            label(for="food") food
+          li          
+            input(type="checkbox", id="Learing")
+            label(for="Learing") Learing
+          li          
+            input(type="checkbox", id="Outdoors")
+            label(for="Outdoors") Outdoors
+
+
+block content 
+  #content
+    .countainer-c
+      .search-result
+        p Showig <font color="#9013FE">15 </font>results by...
+      .search-label
+        .label-1
+          p Koahsiung
+          label(for="label")<i class="far fa-times-circle"></i> 
+          button(id="label")
+
+        .label-1
+          p Entertainment
+          label(for="label")<i class="far fa-times-circle"></i>
+          button(id="label")
+
+      .card
+        ul   
+          li  
+            .card-img
+                img(src="http://lorempixel.com/388/218/", alt="none")
+            .card-info
+                .card-content
+                    h3 Kogi Cosby sweater.
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias laudantium sequi animi cumque, illum incidunt in ea voluptatum consequatur magnam? Amet ducimus exercitationem non. Laborum dolorem, beatae molestias ad, officia dolor repellendus consectetur assumenda, deserunt sed ratione ea? Ut aliquid in accusantium necessitatibus illum sapiente architecto doloremque asperiores alias numquam!
+                .item
+                    p.p1 Ethan Foster
+                    p.p2 Entertainment
+                .city-icon
+                  .mark
+                    i<i class="fas fa-map-marker-alt"></i> 
+                    p Kaohsiung City
+                  .cal
+                    i<i class="far fa-calendar-alt"></i> 
+                    p 2018/5/24 - 2018/5/31
+          li  
+            .card-img
+                img(src="http://lorempixel.com/388/218/", alt="none")
+            .card-info
+                .card-content
+                    h3 In the tumultuous business.
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam a ipsum quo magni deserunt, accusamus impedit dolores sint excepturi ipsa, doloribus soluta temporibus error aperiam quia saepe, facilis at cupiditate reiciendis nisi quam mollitia! Facere consectetur nemo odio voluptate eum. Libero beatae dolor praesentium. Quasi aspernatur tempora nam cumque vitae.
+                .item
+                    p.p1 Herman
+                    p.p2 Entertainment
+                .city-icon
+                  .mark
+                    i<i class="fas fa-map-marker-alt"></i>
+                    p Kaohsiung City
+                  .cal
+                    i<i class="far fa-calendar-alt"></i>
+                    p 2018/5/24 - 2018/5/31     
+
+          li  
+            .card-img
+                img(src="http://lorempixel.com/388/218/", alt="none")
+            .card-info
+                .card-content
+                    h3 Kogi Cosby sweater.
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quam doloremque qui accusamus minima non voluptatibus a dolorem vero recusandae corrupti eum inventore libero, iusto iure laudantium magnam enim exercitationem. Facere laudantium aut amet voluptas recusandae eligendi voluptatibus doloremque deleniti temporibus magni! Voluptatem sequi error omnis vel fuga facilis obcaecati?
+                .item
+                    p.p1 Landon Powers
+                    p.p2 Entertainment
+                .city-icon
+                  .mark
+                    i<i class="fas fa-map-marker-alt"></i>
+                    p Kaohsiung City
+                  .cal
+                    i<i class="far fa-calendar-alt"></i>
+                    p 2018/5/24 - 2018/5/31     
+
+
+block footer
+  #footer
+    .countainer-f
+     .page
+       ul
+            li.num.symbol<i class="fas fa-angle-double-left fa-xs"></i>
+            li.bg 1
+            li.num 2
+            li.num 3
+            li.num 4
+            li.num 5
+            li.num.symbol<i class="fas fa-angle-double-right fa-xs"></i>
+
+
+
+        
+    

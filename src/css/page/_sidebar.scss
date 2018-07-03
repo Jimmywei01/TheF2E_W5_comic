@@ -1,0 +1,131 @@
+
+h2{
+    width: 78px;
+    height: 24px;
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.location{
+    h2{
+        margin: 24px 0 15px 0;
+         i {
+             display: none;
+         }
+    }
+    select {
+        width: 220px;
+        height: 40px;
+        border-width: 0;
+        border: 0px solid;
+    }
+}
+
+
+.date{
+     h2{
+        margin: 24px 0;
+        i {
+            display: none;
+        }
+     }
+     .from{
+         display: flex;
+     }
+     .to{
+         display: flex;
+         margin: 8px 0 0 20px;
+     }
+     input{
+            margin-left: 13px;
+            width: 169px;
+            height: 40px;
+     }
+     p{
+         line-height: 2.5;
+     }
+ }
+
+ .categories{
+      padding: 0;
+    h2{
+        margin: 26px 0 0 40px;
+         i {
+             display: none;
+         }
+    }
+    ul{
+        margin: 24px 0;
+          li {
+              padding-bottom: 8px;
+       }
+    }
+ }
+
+
+@media(max-width:768px){
+    .location {
+       h2 {
+           i {
+              display: none;
+           }
+       }
+    }
+}
+
+
+@media(max-width:414px){
+    .location{
+        select{
+            width: 335px;
+        }
+        h2{
+            display: flex;
+            i{
+                display: inline-block;
+                margin-left: 240px;
+                color: $f2eW1-sixth;
+            }
+        }
+    }
+    
+    .date{
+            margin: 20px 0;
+        h2{
+            display: flex;
+            margin: 0;
+            i {
+                display: inline-block;
+                margin-left: 278px;
+                color: $f2eW1-sixth;
+            }
+        }
+        .from{
+            display: none;
+        }
+        .to{
+            display: none;
+        }
+         p {
+             line-height: 0;
+         }
+    }
+
+    .categories{
+        h2{
+            display: flex;
+                margin: 20px 0 0 40px;
+            i{
+                display: inline-block;
+                margin-left: 220px;
+                color: $f2eW1-sixth;
+            }
+        }
+        ul{
+            display: none;
+        }
+    }
+}
