@@ -1,9 +1,12 @@
 .countainer {
-    margin: 28px 209px 28px 260px;
+    // margin: 28px 209px 28px 260px;
+    margin-top: 28px;
 }
 
 .chapters{
-        margin-left: 175px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         p{
             padding: 0;
             font-size: 24px;
@@ -49,4 +52,20 @@
                bottom: 8px;
                left: 250px;
         }
+}
+
+
+
+@include for-size(pad-portrait-only) {
+    .chapters{
+        margin: 0;
+        max-width: 100%;
+    }
+    .page{
+        width: 100%;
+        span {
+            margin-left: 5px;
+            padding: 2px 10px;
+        }
+    }
 }

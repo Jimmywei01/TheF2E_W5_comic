@@ -100,6 +100,7 @@
   $tablet-portrait-upper-boundary: 900px;
   $tablet-landscape-upper-boundary: 1200px;
   $desktop-upper-boundary: 1800px;
+
   @if $range==phone-only {
     @media (max-width: #{$phone-upper-boundary - 1}) {
       @content;
@@ -137,6 +138,62 @@
   }
   @else if $range==big-desktop-up {
     @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
+
+
+// RWD 佈局(600px 900px 1200px 1800px) 自行在增加
+// @include for-size(tablet-portait-only) {
+// .my-box {
+//   background-color: blue;
+// }
+//}
+@mixin for-size($range){
+  $mobile: 320px;
+  $pad-portrait: 768px;
+  $pad-landscape: 1024px;
+  $desktop: 1200px;
+
+  @if $range==mobile-only{
+    @media (max-width: $mobile) {
+      @content;
+    }
+  }
+
+  @else if $range==mobile-up {
+    @media (min-width: $mobile) and (max-width: #{$pad-portrait - 1}) {
+      @content;
+    }
+  }
+
+  @else if $range==pad-portrait-only {
+    @media (max-width: $pad-portrait) {
+      @content;
+    }
+  }
+
+  @else if $range==pad-portrait-up {
+    @media (min-width: $pad-portrait) and (max-width: #{$pad-portrait - 1}) {
+      @content;
+    }
+  }
+
+  @else if $range==pad-landscape-only {
+    @media (max-width: $pad-landscape) {
+      @content;
+    }
+  }
+
+  @else if $range==pad-landscape-up{
+    @media (min-width: $pad-portrait) and (max-width: #{$pad-landscape - 1}) {
+      @content;
+    }
+  }
+
+  @else if $range==desktop-only {
+    @media (max-width: $desktop) {
       @content;
     }
   }
