@@ -25,7 +25,7 @@ gulp.task('clean', () => {
 
 gulp.task('jade', () => {
   return gulp.src(['./src/**/*.jade'])
-    .pipe($.plumber())                        //语法报错时，整个运行流程还会继续走下去，不退
+    .pipe($.plumber())            //语法报错时，整个运行流程还会继续走下去，不退
     .pipe($.jade({ pretty: true }))
     .pipe(gulp.dest('./public'))
     .pipe(browserSync.reload({
